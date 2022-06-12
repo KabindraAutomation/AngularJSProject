@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+   <script type="text/javascript">
+     var app = angular.module("sample", []);
+     app.controller("emp", function(){
+       this.Name = "Jhon";
+       this.Age = 23;
+       this.Salary = 110000;
+
+     })
+
+   </script>
+  </head>
+  <body ng-app = "sample">
+    <div ng-controller = "emp as o">
+      Hi {{o.Name}} !  looks like your age is {{o.Age}} and my guess is your salary is {{o.Salary}}.
+
+
+    </div>
+  </body>
+</html>
